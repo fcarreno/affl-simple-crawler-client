@@ -1,6 +1,6 @@
 # affl-simple-crawler-serve
 
-### Provides with a simple UI to query data retrieved from [affl-simple-crawler](https://github.com/fcarrreno/affl-simple-crawler)
+### Provides with a simple UI to query data retrieved from [affl-simple-crawler](https://github.com/fcarreno/affl-simple-crawler)
 
 ### Running on `localhost:8080` - returns a simple UI to fetch data and show JSON response in a textarea.
 
