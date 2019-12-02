@@ -9,7 +9,7 @@
 
 1. Clone the repo
 2. `npm install` (install dependencies)
-3. `npm start` (start Express server that serves the page)
+3. `npm start` (start Express server that serves the page and data)
 4. Visit `http://localhost:8080` on browser
 5. Click either the `Users` or `Performance` button, to fetch data.
 
