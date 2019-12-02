@@ -1,0 +1,19 @@
+{
+  "name": "affl-simple-crawler-serve",
+  "version": "1.0.0",
+  "description": "Simple Crawler Scripts Exercise - Serve Content",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcarreno/affl-simple-crawler-serve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcarreno/affl-simple-crawler-serve/issues"
+  },
+  "homepage": "https://github.com/fcarreno/affl-simple-crawler-serve#readme"
+}
