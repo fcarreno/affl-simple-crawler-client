@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Affl Crawler Client</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+<body>
+<section class="hero is-success is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Welcome to Simple Affl Crawler Content Client
+            </h1>
+            <h2 class="subtitle">
+                We currently offer two simple set of resources
+            </h2>
+
+            <div class="columns has-text-centered">
+                <div class="column is-offset-4 is-2 is-large">
+                    <button class="button is-info is-fullwidth is-large" onclick="getCrawlerData('users')">Users</button>
+
+                </div>
+                <div class="column is-2">
+                    <button class="button is-warning is-fullwidth is-large" onclick="getCrawlerData('performance')">Performance</button>
+                </div>
+            </div>
+
+            <textarea id="response" class="textarea is-info" rows="15" placeholder="Query Results will be here..."></textarea>
+
+
+        </div>
+    </div>
+</section>
+</body>
+<script type="text/javascript">
+
+    async function getCrawlerData(resourceType){
+
+        let response, JSONData, prettyPrintData, responseTxtArea;
+        try{
+            responseTxtArea = document.getElementById('response');
+            response = await fetch(`http://localhost:8080/api/resources/${resourceType}`);
+            JSONData = await response.json();
+            prettyPrintData =  JSON.stringify(JSONData, undefined, 4);
+            responseTxtArea.innerHTML = prettyPrintData;
+        }
+        catch(err){
+            console.log('Query error', err);
+        }
+    }
+
+
+</script>
+</html>

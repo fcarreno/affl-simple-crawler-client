@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/fcarreno/affl-simple-crawler-serve/issues"
   },
-  "homepage": "https://github.com/fcarreno/affl-simple-crawler-serve#readme"
+  "homepage": "https://github.com/fcarreno/affl-simple-crawler-serve#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.0.1"
+  }
 }
